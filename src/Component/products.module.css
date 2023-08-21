@@ -1,0 +1,59 @@
+.pheading{
+  position: relative;
+
+}
+.headingimg{
+  position: absolute;
+    left: 17rem;
+    top: -4rem;
+}
+.headingimglogo{
+  width: 7rem;
+}
+.searchbyname{
+  cursor: pointer;
+  list-style: none;
+}
+.searchbyname:hover{
+  color: var(--bg);
+}
+.productcard{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.productlistimg{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; 
+  height: 20rem;
+  overflow-y: scroll;
+}
+.card {
+  background: white;
+  display: flex;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  max-width: 15rem; /* Adjust the max-width as needed */
+  width: 100%;
+ 
+}
+
+ .imgp{
+  transform: rotate(-20deg);
+  position: absolute;
+  right: 0;
+  width: 31%;
+  height: 84%;
+  bottom: -20%;
+   } 
+   .overflow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+

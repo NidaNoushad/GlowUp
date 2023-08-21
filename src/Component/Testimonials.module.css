@@ -1,0 +1,57 @@
+.leftsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+ 
+}
+.rightsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  align-items: end;
+}
+
+.midsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.midImage{
+  width: 100%;
+}
+.box{
+  
+ padding: 2rem;
+}
+.testimonial{
+  background-color: white;
+position: relative;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 1rem;
+border-radius: 10px;
+}
+.testimonial>img{
+position: absolute;
+    top: -2rem;
+}
+.testimonial>:nth-child(4){
+  font-style: italic;
+
+}
+.testimonial>:nth-child(3){
+  height: 1px;
+  width: 80%;
+  background-color: black;
+
+}
+.testimonial>:nth-child(2){
+ font-size: 15px;
+
+}

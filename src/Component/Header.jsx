@@ -10,11 +10,10 @@ const Header = () => {
   }; 
   return (
      <nav role="navigation" className='container-fluid'>  
-     <div className='row'>
-      {/* Hamburger Menu Section */}
-      {/* <div className={`${css.RightSection} col-5`}> */}
-     <div className={`${css.menuToggle} col-1`}>
-      {/* <input type="checkbox" /> */}
+     <div className="row align-items-center">
+    
+     <div className={`${css.menuToggle} col-3 col-md-1`}>
+      
       <input type="checkbox" checked={isMenuOpen} onChange={handleMenuToggle} />  
       <span></span>
       <span></span>
@@ -34,7 +33,7 @@ const Header = () => {
    <a href='#' className='mb-4'> <i className="fa-solid fa-cart-shopping text-start mb-4" style={{color: "#f0ebf4"}}></i></a>
     </div>
       
-      <div className={`${css.logo} col-8 text-end`}>   
+      <div className={`${css.logo} col-3 col-md-8 ms-md-auto text-md-end`}>   
         <a href='#' style={{margin:"20px"}}><img src={LogoImage} alt="GLOWUPLOGO" /></a>
       </div>
    </div>

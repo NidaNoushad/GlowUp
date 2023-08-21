@@ -32,6 +32,7 @@ export const SliderProducts = [{
     img: img3
 }
 ]
+
 export const ProductsData = [{
     name: 'SKIN',
     detail: 'Super Skin Care',
