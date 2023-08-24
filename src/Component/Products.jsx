@@ -18,7 +18,7 @@ const Products = () => {
   }
 
   return (
-    <div className='container mt-5'>
+    <div className={`container mt-5 ${css.container}`}>
       <div className={`${css.pheading} text-center`}>
         <div className={css.headingimg}>
           <img src={plane} alt='plane' className={css.headingimglogo} />
@@ -27,7 +27,7 @@ const Products = () => {
       </div>
       {/* productList */}
       <div className='row mb-5'>
-        <div className={`${css.Searchproductlist} col col-md-3`}>
+        <div className={`${css.Searchproductlist} col-12 col-md-3`}>
           <ul>
             <li className={`mb-4 fs-4 ${css.searchbyname}`} onClick={()=>filter("All")}>All</li>
             <li className={`mb-4 fs-4 ${css.searchbyname}`} onClick={()=>filter("skin care")}>Skin Care</li>
@@ -37,7 +37,7 @@ const Products = () => {
 
         </div>
         
-        <div className={`${css.productlistimg} col col-md-9 text-start`} ref={parent}>
+        <div className={`${css.productlistimg} col-12 col-md-9 text-start`} ref={parent}>
           {pMenu.map((product, index) => (
             <div className={css.card} key={index}>
               <div className={css.overflow}>

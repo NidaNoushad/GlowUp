@@ -1,11 +1,35 @@
 .MainSection{
   padding: 1.5rem;
+ 
 }
-/* .mainLeft{
-  display: flex;
-  flex-direction: column;
- padding-left:3rem;
-} */
+.mainLeft{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .mainLeft{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2px;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    padding: 0 2px !important;
+   /* gap: 20px; */
+   flex-wrap: wrap;
+   font-size: 1.5rem !important;
+  }
+  .leftsecondsection{
+    justify-self: end;
+    height: 3rem !important;
+ 
+  }
+  .boldText{
+    font-size: 1.5rem !important;
+
+  }
+}
+
+
 .mainLeft h3{
   line-height: 1.5em;
   letter-spacing: 0.125em;
@@ -17,30 +41,52 @@
   line-height: 1.05em;
   margin-bottom: 0.25em;
 }
-/* .mainImage{
+
+
+.MainSectioncenter{
+  padding: 1.5rem;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-} */
-.circleAroundImage{
+  /* overflow: hidden; */
+}
+
+ .circleAroundImage{
   position: absolute;
-  width: 35rem;
-  height:35rem;
+  width: 30rem;
+  height:30rem;
   background-color: var(--bg);
   border-radius: 50rem;
   z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.mainImage{
+  width: 37rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 .hero{
-  position: relative;
-  width:35rem;
-  height: 35rem;
-  max-width: 35rem;
+  width: 100%;
+  
 }
-.lockBackground{
+.lockandbutton{
   position: relative;
-  left: 26rem;
-    bottom: 11rem;
+    top: -13rem;
+    width: 200px;
+    left: 25rem;
+    height: 84px
+}
+
+
+
+.lockBackground{
+  position:absolute;
+  left: 1rem;
+    bottom: 1rem;
     width: 3.5rem;
     height: 3.5rem;
     background-color: var(--write);
@@ -58,24 +104,24 @@
   transform: translate(-50%,-50%);
   color:var(--black)
 }
-.MainSectioncenter{
-  position: relative;
-}
+
 
 /* BUTTON */
 .buttonPosition{
-   position: absolute;
-    left: 31rem;
-    bottom: 11.4rem;
-     
-    display: flex;
-  justify-content: flex-start;
+  position:absolute;
+    left: 7rem;
+    bottom: 42px;
+    width: 50px;
 }
 .button {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   padding: 5px 35px;
   background: #FEC195;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 500;
   color: #181818;
   border: 1px solid #FEC195;
@@ -196,9 +242,38 @@ button:hover .icon3 {
   }
 }
 
-/* .mainRight{
-  padding-right:3rem ;
-} */
+@media screen and (max-width: 640px) {
+  .MainSectioncenter{
+    margin: 3rem 0;
+    overflow: visible;
+  }
+    .circleAroundImage {
+      width: 15rem;
+      height: 15rem;
+    }
+    
+    .mainImage {
+      width: 15rem;
+      height: 15rem;
+      top: 70%;
+    }
+    
+   .lockandbutton{
+    left: 3.5rem;
+    top: 27px;
+    width:163px;
+   }
+   .lockBackground{
+    width: 2.5rem;
+    height: 2.5rem;
+   }
+   .buttonPosition{
+    width: 0;
+   }
+    .button {
+      font-size: 10px;
+      padding: 3px 25px;
+    }
+  }
+  
 
-/* @media (max-width:1024px) {
-  .mainLeft { */

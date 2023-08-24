@@ -8,7 +8,7 @@ const Virtual = () => {
   return (
     <div className='container mt-5'>
       <div className='row'>
-        <div className={`col text-start p-3 ${css.lefts}`}>
+        <div className={`col-12 col-md-6 text-md-start text-center p-3 ${css.lefts}`}>
           <h2 className='fw-bold mb-5' style={{fontSize:"35px",marginBottom:"2rem"}}>
           VIRTUAL TRY-ON
           </h2>
@@ -16,7 +16,7 @@ const Virtual = () => {
           <p className='fw-bold mb-0 pb-0 lead' style={{fontSize:"25px"}}>Try Now!</p>
           <img src={shade} alt="" className={`${css.imgleft}`} />
         </div>
-        <div className={`col ${css.right}`}>
+        <div className={`col-12 col-md-6 ${css.right}`}>
         <ReactCompareImage leftImage={before} rightImage={after} />
         </div>
 

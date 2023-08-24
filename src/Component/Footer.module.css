@@ -11,3 +11,19 @@
   width: 100px;
   height: 100px;
 }
+@media screen and (max-width:856px) {
+  .footerlist{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .footerinfo{
+    font-size: 10px;
+  }
+  .imgbox{
+    width: 70px;
+    height: 70px;
+padding-left: 1rem;
+  }
+ 
+}

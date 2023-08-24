@@ -5,8 +5,10 @@ import MainSection from './Component/MainSection'
 import SwipperSlider from './Component/SwipperSlider'
 import  Virtual  from './Component/Virtual'
 import Products from './Component/Products'
-// import Slider from './Component/Slider'
+//  import Slider from './Component/Slider'
 import Testimonials from './Component/Testimonials'
+import Footer from './Component/Footer'
+
 
 
 function App() {
@@ -15,12 +17,13 @@ function App() {
   return (
     <>
       <Header/>
-     <MainSection/>
+      <MainSection/>
      {/* <Slider/> */}
      <SwipperSlider/>
      <Virtual/>
      <Products/>
      <Testimonials/>
+   <Footer/>
     </>
   )
 }

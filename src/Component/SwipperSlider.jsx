@@ -1,28 +1,31 @@
 import React from 'react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import 'swiper/css/scrollbar';
 
 import css from './SwipperSlider.css';
-import { SliderProducts } from '../data/Product'
+import { SliderProducts } from '../data/Product';
+
 const SwipperSlider = () => {
-  
   return (
-    <div className='scontainer mb-4'>
+    <div className='scontainer container'>
       <Swiper
-        // modules={[Navigation, Pagination]}
-        speed={500}
-        navigation={true}
-        slidesPerView={3}
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={40}
+        slidesPerView={3}
         slidesPerGroup={1}
-        pagination={true}
         className='myswiper'
+        loopFillGroupWithBlank={true}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange={() => console.log('slide change')} 
       >
         {SliderProducts.map((slide, i) => (
           <SwiperSlide key={i}>
@@ -37,11 +40,10 @@ const SwipperSlider = () => {
                 </span>
               </div>
               <div>
-                <a href="#"><button className='button'>Shop Now
-                </button></a>
+                <a href="#"><button className='button'>Shop Now</button></a>
               </div>
+              <img src={slide.img} alt="product1" className='imgp'/>    
             </div>
-            <img src={slide.img} alt="product1" className='imgp' />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -49,4 +51,5 @@ const SwipperSlider = () => {
   )
 }
 
-export default SwipperSlider
+export default SwipperSlider;
+

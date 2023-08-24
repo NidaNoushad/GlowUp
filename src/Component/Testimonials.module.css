@@ -55,3 +55,16 @@ position: absolute;
  font-size: 15px;
 
 }
+@media screen and (max-width:856px) {
+  .leftsection{
+    justify-content: center;
+    align-items: center;
+  }
+  .rightsection{
+    justify-content: center;
+    align-items: center;
+  }
+  .reviewcontainer{
+    margin-top: 1rem !important;
+  }
+}

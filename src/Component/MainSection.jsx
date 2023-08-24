@@ -2,30 +2,33 @@ import React from 'react'
 import css from './MainSection.module.css'
 import hero from '../Images/hero.png'
 import { AiFillLock } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 const MainSection = () => {
+  const transition = { duration: 3, type: "spring" }
   return (
-    
-      <div className={`{css.MainSection} container-fluid`}>
+    <div className={`container-fluid mb-4`}>
+      <div className={css.MainSection}>
         <div className='row'>
-          <div className={`${css.mainLeft} col-md-3 col-12`}>
-<div className='row'>
-            <div className='col-6 col-md-12 text-md-start text-center ' style={{height:"16rem"}}><h3 className='bold'>
+          <div className={`col-md-3 col-12 ${css.mainLeft}`}>
+            <div className={`text-md-start text-start ${css.leftfirstsection}`} ><h3 className={css.boldText}>
               SKIN <br /> PROTECTION <br /> CREAM
-            </h3></div>
-            <div className='col-6 col-md-12'  style={{height:"16rem"}}>
-              <h2 className={`${css.boldText}`}>Trendy <br /> Collections</h2>
-              <p className='text-md-start text-center lead'>Seedily say has suitable disposal and boy. Exercise joy man children rejoiced</p>
+            </h3>
             </div>
+            <div className={css.leftsecondsection}>
+              <h2 className={`${css.boldText} text-md-start text-end`}>Trendy <br /> Collections</h2>
+              <p className='text-md-start text-end lead'>Seedily say has suitable disposal and boy. Exercise joy man children rejoiced</p>
             </div>
           </div>
-          <div className={`${css.MainSectioncenter} col-md-6 col-12`}>
 
-            <div className={css.mainImage}>
-              <div className={css.circleAroundImage}></div>
-              <img src={hero} alt="hero image" className={css.hero} /> </div>
-              <div className={css.lockBackground}><AiFillLock className={css.lock} /></div>
-           
+          <div className={`col-md-6 col-12 ${css.MainSectioncenter}`}>
+            <motion.div initial={{ top: "35%" }} whileInView={{ top: "50%" }} className={css.circleAroundImage} transition={transition}></motion.div>
+            <motion.div className={`{css.mainImage}`} initial={{ top: "65%" }} whileInView={{ top: "50%" }} transition={transition}>
+              <img src={hero} alt="hero image" className={css.hero} />
+            </motion.div>
+            <motion.div className={css.lockandbutton}>
+            <div className={css.lockBackground}><AiFillLock className={css.lock} /></div>
+
             <div className={`${css.buttonPosition}`}>
               <button className={`${css.button} text-start`}>Best Signup  Offers
                 <div className={css.icon1}>
@@ -39,21 +42,24 @@ const MainSection = () => {
                 </div>
               </button>
             </div>
+            </motion.div>
           </div>
-          <div className={`${css.mainLeft} ${css.mainRight}  col-md-3 col-12 text-md-end text-center `}>
-            <div className='row'>
-            <div className='col-6 col-md-12'style={{height:"16rem"}}> <h2 className={`${css.boldText}`}>1.5m</h2>
-              <p className='lead'>Monthlt traffic</p>
+          <div className={`${css.mainLeft} ${css.mainRight}  col-md-3 col-12 text-md-end mt-4 `}>
+
+            <div className={css.leftfirstsection}>
+              <h2 className={`${css.boldText}`}>1.5m</h2>
+              <p className='lead'>Monthly traffic</p>
             </div>
-            <div className='col-md-12 col-6' style={{height:"16rem"}}> <h2 className={`${css.boldText}`}>100K</h2>
+            <div style={{ height: "16rem" }} className={`${css.leftsecondsection} text-end`}>
+              <h2 className={`${css.boldText}`}>100K</h2>
               <p className='lead'>Happy Customers</p>
-              </div>
             </div>
 
-          </div>
 
+          </div>
         </div>
-      </div>
+      </div >
+    </div >
 
 
 

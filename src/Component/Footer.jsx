@@ -10,13 +10,13 @@ const Footer = () => {
     <div className='container-fluid'>
       <hr />
       <div className='row m-2'>
-        <div className={`${css.footeralign} col-2`}>
+        <div className={`${css.footeralign}  col-md-2 col-12`}>
           <div className={css.imgbox}>
           <a href="" style={{textDecoration:"none",color:"white"}}>
             <img src={LogoImage} alt="logo" style={{width:"100%"}} /></a>
           </div>
         </div>
-        <div className={`${css.footeralign} col-3`}>
+        <div className={`${css.footeralign} col-md-3 col-6`}>
           <ul className={css.footerlist}>
             <li className='mb-3 fw-bold'>Contact Us</li>
             <li>
@@ -32,7 +32,7 @@ const Footer = () => {
 
           </ul>
         </div>
-        <div className={`${css.footeralign} col-2 text-center`}>
+        <div className={`${css.footeralign} col-md-2 col-6 text-center`}>
           <ul className={css.footerlist}>
             <li className='mb-3 fw-bold'>Account</li>
             <li>
@@ -42,7 +42,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={`${css.footeralign} col-2  text-center`}>
+        <div className={`${css.footeralign} col-md-2 col-6  text-center`}>
           <ul className={css.footerlist}>
             <li className='mb-3 fw-bold'>Company</li>
             <li>
@@ -53,7 +53,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={`${css.footeralign} col-3 text-center`}>
+        <div className={`${css.footeralign} col-md-3 col-6 text-start`}>
           <ul className={css.footerlist}>
             <li className='mb-3 fw-bold'>Resources</li>
             <li>
