@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const MainSection = () => {
   const transition = { duration: 3, type: "spring" }
   return (
-    <div className={`container-fluid mb-4`}>
+    <div className={`container-fluid mb-4 `}>
       <div className={css.MainSection}>
         <div className='row'>
           <div className={`col-md-3 col-12 ${css.mainLeft}`}>
@@ -15,7 +15,7 @@ const MainSection = () => {
               SKIN <br /> PROTECTION <br /> CREAM
             </h3>
             </div>
-            <div className={css.leftsecondsection}>
+            <div className={`pr-1 ${css.leftsecondsection}`}>
               <h2 className={`${css.boldText} text-md-start text-end`}>Trendy <br /> Collections</h2>
               <p className='text-md-start text-end lead'>Seedily say has suitable disposal and boy. Exercise joy man children rejoiced</p>
             </div>

@@ -268,11 +268,11 @@ button:hover .icon3 {
     height: 2.5rem;
    }
    .buttonPosition{
-    width: 0;
+    width:30px;
    }
     .button {
-      font-size: 10px;
-      padding: 3px 25px;
+      font-size: 12px;
+      padding: 3px 40px;
     }
   }
   

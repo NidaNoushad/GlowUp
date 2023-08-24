@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-center ' style={{fontSize:"10px"}}>
-        <p className='mb-0'>Copyright ©2023 by GlowUp, Inc.</p>
+        <p className='mb-0'>Copyright ©2023 by NidaNoushad/GlowUp, Inc.</p>
            <p className='mb-0'>All rights reserved.</p>
 
       </div>
