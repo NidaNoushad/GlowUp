@@ -20,7 +20,6 @@ const SwipperSlider = () => {
         slidesPerView={3}
         slidesPerGroup={1}
         className='myswiper'
-        loopFillGroupWithBlank={true}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
